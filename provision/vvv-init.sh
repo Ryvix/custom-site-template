@@ -46,6 +46,5 @@ setup_nginx_folders
 cd "${VVV_PATH_TO_SITE}/public_html"
 
 copy_nginx_configs
-setup_wp_config_constants
 
 echo " * Site Template provisioner script completed for ${VVV_SITE_NAME}"
