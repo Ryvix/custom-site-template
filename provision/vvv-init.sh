@@ -40,6 +40,12 @@ copy_nginx_configs() {
   sed -i "s#{{LIVE_URL}}##" "${VVV_PATH_TO_SITE}/provision/vvv-nginx.conf"
 }
 
+download_mds() {
+  # Install the latest version of MDS
+  echo " * Downloading MDS"
+  noroot git clone https://gitlab.com/MillionDollarScript/MillionDollarScript.git "${VVV_PATH_TO_SITE}/public_html"
+}
+
 setup_database
 setup_nginx_folders
 
