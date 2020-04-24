@@ -52,5 +52,6 @@ setup_nginx_folders
 cd "${VVV_PATH_TO_SITE}/public_html"
 
 copy_nginx_configs
+download_mds
 
 echo " * Site Template provisioner script completed for ${VVV_SITE_NAME}"
